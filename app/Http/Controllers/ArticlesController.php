@@ -29,6 +29,7 @@ class ArticlesController extends Controller
        public function destroy(Request $req, $id)
     {
         $article = Blog::find($id);
+        $articles = Blog::find($id);
         $article->delete();
         return redirect('view-article')->with('status', "Data deleted successfully");
     }
