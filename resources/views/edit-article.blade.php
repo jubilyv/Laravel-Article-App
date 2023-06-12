@@ -52,8 +52,5 @@
             </div>
         </div>
     </form>
-    <!-- <script>
-    history.replaceState({},document.title, window.location.pathname);
-    window.location.href ='';
-    </script> -->
+  
     @endsection

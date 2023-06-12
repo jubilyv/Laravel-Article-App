@@ -29,4 +29,3 @@ Route::get('edit-article/{id}', [ArticlesController::class, 'edit'])->name('edit
 Route::put('edit-article/{id}', [ArticlesController::class, 'update'])->name('update-article');
 Route::delete('delete-article/{id}', [ArticlesController::class, 'destroy'])->name('delete-article');
 Auth::routes();
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
