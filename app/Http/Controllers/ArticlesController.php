@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
+  
 class ArticlesController extends Controller
 {
 
@@ -21,9 +23,10 @@ class ArticlesController extends Controller
         $article->content = $req->input('content');
         $article->update();
         return redirect('view-article')->with('status', "Data updated successfully");
+        
     }
-
-    public function destroy(Request $req, $id)
+   
+       public function destroy(Request $req, $id)
     {
         $article = Blog::find($id);
         $article->delete();

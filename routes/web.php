@@ -23,11 +23,10 @@ Route::get('/', function () {
 
 Route::view("add-article", 'add-article');
 Route::view("view-article", 'view-article');
-Route::get('users', [users::class, 'index'])->name('users');
 Route::post('add-article', [AddController::class, 'addData']);
 Route::get('view-article', [ViewController::class, 'show'])->name('view-article');
 Route::get('edit-article/{id}', [ArticlesController::class, 'edit'])->name('edit-article');
 Route::put('edit-article/{id}', [ArticlesController::class, 'update'])->name('update-article');
 Route::delete('delete-article/{id}', [ArticlesController::class, 'destroy'])->name('delete-article');
 Auth::routes();
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
