@@ -20,7 +20,7 @@
 <body>
 
     <h4 class="text-center">An inspiring collection of Articles </h4>
-    <?php if (empty($blogs)): ?> <p>No Articles found.</p> 
+    <?php if (empty($blogs)): ?> 
       
     <?php else: ?>  
         <?php foreach ($blogs as $article): ?>
@@ -42,17 +42,20 @@
                     </div>
 
                     <div class="card-footer">
-                        <div class="btn-group " role="group" aria-label="Robot Buttons">
+                        <div class="btn-group" role="group" aria-label="Robot Buttons" >
                             <form action="{{ route('edit-article', $article->id) }}" method="GET">
                                 @csrf
                                 @method('GET')
-                                <button type="submit" class="btn btn-primary  ">Edit</button>
+                                <button type="submit" class="btn btn-primary btn-sm">Edit</button>
                             </form>
 
                             <!-- Button to trigger the modal -->
-                            <button type="submit" class="btn btn-danger  delete-btn " data-bs-toggle="modal"
+                            <button type="submit" class="btn btn-danger btn-sm " data-bs-toggle="modal"
                                 data-bs-target="#deleteArticleModal">Delete</button>
                         </div>
+                    </div>
+               
+              
                         <!-- Modal -->
                         <div class="modal fade" id="deleteArticleModal" tabindex="-1" aria-labelledby="deleteArticleModalLabel"
                             aria-hidden="true">
@@ -87,7 +90,7 @@
                             </div>
                         </div>
                  
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
         <?php endforeach; ?>

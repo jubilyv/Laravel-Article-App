@@ -29,6 +29,7 @@
                     data-bs-target="#confirmEditModal">Update</button>
             </div>
         </div>
+       
         <!-- modal -->
         <div class="modal fade" id="confirmEditModal" tabindex="-1" role="dialog"
             aria-labelledby="confirmEditModalLabel" aria-hidden="true">
@@ -51,5 +52,5 @@
             </div>
         </div>
     </form>
-
+  
     @endsection
