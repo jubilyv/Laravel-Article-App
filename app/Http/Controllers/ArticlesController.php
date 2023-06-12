@@ -34,5 +34,5 @@ class ArticlesController extends Controller
         return redirect('view-article')->with('status', "Data deleted successfully");
     }
    
-
+//
 }
