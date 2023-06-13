@@ -3,7 +3,6 @@
 use App\Http\Controllers\AddController;
 use App\Http\Controllers\ViewController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\users;
 use App\Http\Controllers\ArticlesController;
 
 /*

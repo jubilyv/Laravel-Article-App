@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\blog;
-use Illuminate\Support\Facades\Validator;
 
 class AddController extends Controller
 {

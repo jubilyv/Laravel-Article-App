@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Redirect;
 
   
 class ArticlesController extends Controller
@@ -29,7 +28,6 @@ class ArticlesController extends Controller
        public function destroy(Request $req, $id)
     {
         $article = Blog::find($id);
-        $articles = Blog::find($id);
         $article->delete();
         return redirect('view-article')->with('status', "Data deleted successfully");
     }
