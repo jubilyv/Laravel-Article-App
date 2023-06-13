@@ -13,7 +13,6 @@ class ViewController extends Controller
     {
 
         $blogs = Blog::all();
-        // DB::table('blogs')->pluck('title');
         
         return view('view-article', compact('blogs'));
     }
